@@ -2,6 +2,8 @@ You can read the original README.md file [here](https://github.com/CorentinJ/Rea
 
 After hours and hours of playing around and messing with package dependecy issues, I have finally managed to make it work in Conda environment.
 
+Run ```python demo_cli.py``` and see if it works.
+
 I'd suggest you to use conda virutal env.
 Here is a [Google colab file](https://colab.research.google.com/drive/1s7SbRFFc-f88a2obYxWE_V6RZluKTNED?usp=sharing) which runs this repo and generates the audio output, as per task.
 
