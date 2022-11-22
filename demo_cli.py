@@ -120,9 +120,6 @@ if __name__ == '__main__':
     num_generated = 0
     while True:
         try:
-            if input("Train again?\n(y/n)?") != 'y':
-                print('Exiting.')
-
             message = "Reference voice: enter an audio filepath of a voice to be cloned (mp3, " \
                       "wav, m4a, flac, ...):\n"
             audio_path = "interactly lady voice.mp3"
@@ -204,7 +201,10 @@ if __name__ == '__main__':
             sf.write(filename, generated_wav.astype(np.float32), synthesizer.sample_rate)
             num_generated += 1
             print("\nSaved output as %s\n\n" % filename)
-
+            
+            
+            if input("Train again?\n(y/n)?") != 'y':
+                print('Exiting.')
 
         except Exception as e:
             print("Caught exception: %s" % repr(e))
