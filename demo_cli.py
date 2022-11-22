@@ -122,7 +122,7 @@ if __name__ == '__main__':
         try:
             message = "Reference voice: enter an audio filepath of a voice to be cloned (mp3, " \
                       "wav, m4a, flac, ...):\n"
-            audio_path = "interactly lady voice.mp3"
+            audio_path = "Interactly lady voice.mp3"
             in_fpath = Path(audio_path.replace("\"", "").replace("\'", ""))
 
             ## Computing the embedding
